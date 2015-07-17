@@ -20,7 +20,7 @@
         } else {
           // assume plain object
           Object.keys(record).forEach(function (property) {
-            t.cell(property, record[property]);
+            t.cell(property, JSON.stringify(record[property]));
           });
         }
         t.newRow();
